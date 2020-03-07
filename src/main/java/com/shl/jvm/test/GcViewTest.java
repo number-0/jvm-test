@@ -49,7 +49,8 @@ public class GcViewTest {
           class space    used 567K, capacity 595K, committed 640K, reserved 1048576K
         }
     -XX:+HeapDumpOnOutOfMemoryError 堆oom时导出整个堆信息
-    -XX:HeapDumpPath=d:/Test03.dump 堆oom时导出整个堆信息存放的路径
+    -XX:HeapDumpPath=/Users/workoffice/java/workspace-shl/jvm-test/heap.dump 堆oom时导出整个堆信息存放的路径
+                      文件名随意：error.hprof、heap.dump、dump.log
     -Xloggc:/home/shl/gc.log gc日志路径
     -XX:-UseGCLogFileRotation gc日志滚动
 	  -XX:GCLogFileSize=1024K gc日志文件大小

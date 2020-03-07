@@ -5,6 +5,6 @@ package com.shl.jvm.test.command;
  * @date 2020/3/7
  */
 // TODO: 2020/3/7
-public class JstackView {
+public class JstatView {
 
 }
