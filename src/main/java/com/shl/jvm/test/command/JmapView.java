@@ -14,7 +14,7 @@ public class JmapView {
 
   @Test
   public void jmapView() {
-    //jmap -heap
+    //jmap -heap pid 堆使用情况
 
     for(int i=0; i < Integer.MAX_VALUE; i ++){
       Byte[] arr = new Byte[1*1024*1024];

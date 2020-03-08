@@ -51,15 +51,15 @@ public class GcViewTest {
     -XX:+HeapDumpOnOutOfMemoryError 堆oom时导出整个堆信息
     -XX:HeapDumpPath=/Users/workoffice/java/workspace-shl/jvm-test/heap.dump 堆oom时导出整个堆信息存放的路径
                       文件名随意：error.hprof、heap.dump、dump.log
-    -Xloggc:/home/shl/gc.log gc日志路径
-    -XX:-UseGCLogFileRotation gc日志滚动
-	  -XX:GCLogFileSize=1024K gc日志文件大小
+    -Xloggc:/Users/workoffice/java/workspace-shl/jvm-test/gc.log gc日志路径
+    -XX:+UseGCLogFileRotation gc日志滚动
+	  -XX:GCLogFileSize=20M gc日志文件大小
 	  -XX:NumberOfGCLogFiles=12 gc日志文件数量
    */
 
   @Test
   public void test() {
-      //-Xms5m -Xmx20m -XX:+UseConcMarkSweepGC -XX:+PrintCommandLineFlags -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintHeapAtGC
+      //-Xms5m -Xmx20m -XX:+UseConcMarkSweepGC -XX:+PrintCommandLineFlags -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintHeapAtGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/Users/workoffice/java/workspace-shl/jvm-test/heap.dump -Xloggc:/Users/workoffice/java/workspace-shl/jvm-test/gc.log -XX:+UseGCLogFileRotation -XX:GCLogFileSize=20M -XX:NumberOfGCLogFiles=12
 
 //    //查看GC信息
 //    System.out.println();

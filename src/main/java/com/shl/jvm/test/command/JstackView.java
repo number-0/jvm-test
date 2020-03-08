@@ -6,5 +6,5 @@ package com.shl.jvm.test.command;
  */
 // TODO: 2020/3/7
 public class JstackView {
-
+  //jstack  线程dump
 }
